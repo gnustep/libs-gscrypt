@@ -46,9 +46,9 @@ ADDITIONAL_INCLUDE_DIRS =  -I../
 
 # Additional LDFLAGS to pass to the linker
 ifeq ($(debug), yes)
-	ADDITIONAL_LDFLAGS = -lFoundationExt_d -lpam
+	ADDITIONAL_LDFLAGS = -lpam
 else
-	ADDITIONAL_LDFLAGS = -lFoundationExt -lpam
+	ADDITIONAL_LDFLAGS = -lpam
 endif
 
 # Additional library directories the linker should search
