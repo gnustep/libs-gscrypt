@@ -1,8 +1,9 @@
 /* GSCryptBase.m - GSCrypt
-   Copyright (C) 2000 Free Software Foundation, Inc.
+
+   Copyright (C) 2000-2003 Free Software Foundation, Inc.
    
    Written by:	Manuel Guesdon <mguesdon@orange-concept.com>
-   Date: 		Mar 2000
+   Date: 	Mar 2000
    
    This file is part of the GNUstep GSCrypt Library.
    
@@ -21,7 +22,7 @@
    Software Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 */
 
-// $Id$
+static const char rcsId[]="$Id$";
 
 #include <gscrypt/GSCryptBase.h>
 
@@ -334,7 +335,7 @@ NSData* HexStringToData(NSString* _string)
 			  if (pString[i*2]>='0' && pString[i*2]<='9')
 				pData[i]=(pString[i*2]-'0') << 4;
 			  else if (pString[i*2]>='A' && pString[i*2]<='F')
-				pData[i]=(pString[i*2]-'A') << 4;
+				pData[i]=(pString[i*2]-'A'+10) << 4;
 			  else
 				{
 				  NSCAssert(NO,@"Bad hex String");
@@ -342,7 +343,7 @@ NSData* HexStringToData(NSString* _string)
 			  if (pString[i*2+1]>='0' && pString[i*2+1]<='9')
 				pData[i]=pData[i]|(pString[i*2+1]-'0');
 			  else if (pString[i*2+1]>='A' && pString[i*2+1]<='F')
-				pData[i]=pData[i]|(pString[i*2+1]-'A');
+				pData[i]=pData[i]|(pString[i*2+1]-'A'+10);
 			  else
 				{
 				  NSCAssert(NO,@"Bad hex String");
