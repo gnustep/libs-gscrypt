@@ -1,3 +1,9 @@
+2000-04-01  Manuel Guesdon <mguesdon@orange-concept.com>
+
+	* Added GSPam.h/m: PAM Support
+	* GNUmakefile: Added GSPam
+	* Makefile.pramble: Added -lpam
+
 2000-03-31  Manuel Guesdon <mguesdon@orange-concept.com>
 
 	* Initial Version

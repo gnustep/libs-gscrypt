@@ -43,12 +43,14 @@ libgscrypt_OBJC_FILES = \
 GSCryptBase.m \
 GSMD5.m \
 GSRC4.m \
+GSPam.m \
 
 libgscrypt_HEADER_FILES = \
 GSCryptCommon.h \
 GSCryptBase.h \
 GSMD5.h \
 GSRC4.h \
+GSPam.h \
 
 
 SRCS = $(LIBRARY_NAME:=.m)

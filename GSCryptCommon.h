@@ -32,6 +32,7 @@
 #include <Foundation/NSArray.h>
 #include <Foundation/NSException.h>
 #include <Foundation/NSData.h>
+#include <Foundation/NSDebug.h>
 
 #ifndef BYTE_DEFINED
 typedef unsigned char BYTE;
