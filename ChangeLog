@@ -1,3 +1,8 @@
+2006-10-09  Nicola Pero <nicola.pero@meta-innovation.com>
+
+	* GNUmakefile: Do not set GNUSTEP_INSTALLATION_DIR
+	and GNUSTEP_MAKEFILES.
+
 2003-01-19  Manuel Guesdon <mguesdon@orange-concept.com>
 
 	* GSCryptBase.m: Fixed Bug in HexStringToData
